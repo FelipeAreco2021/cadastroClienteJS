@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+</head>
+
+<body>
+    <h1>Cadastro de Cliente</h1>
+    <form>
+        <input id="nome" type="text" placeholder="Nome">
+        <input id="email" type="email" placeholder="Email">
+        <input id="cpf" type="text" placeholder="CPF">
+        <input id="cep" type="text" placeholder="CEP">
+        <input id="rua" type="text" placeholder="Rua">
+        <input id="bairro" type="text" placeholder="Bairro">
+        <input id="cidade" type="text" placeholder="Cidade">
+        <input id="estado" type="text" placeholder="Estado">
+
+        <button id="btnSalvarCliente" type="button">Salvar</button> <br>
+        <form>
+            <input id="inputBuscaCliente" type="search" placeholder="Digite o nome do cliente">
+    
+        </form>
+        
+    </form>
+    <table border="1">
+        <thead>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>CPF</th>
+            <th>CEP</th>
+            <th>RUA</th>
+            <th>BAIRRO</th>
+            <th>CIDADE</th>
+            <th>ESTADO</th>
+            <th>Excluir</th>
+        </thead>
+        <tbody id="tabelaCliente"></tbody>
+    </table>
+
+
+
+    <h1>Cadastro de Produtos</h1>
+    <form>
+        
+        <input id="produtoNome" type="text" placeholder="Nome">
+        <input id="produtoDescricao" type="text" placeholder="Descrição">
+        <input id="produtoQuantidade" type="number" placeholder="Quantidade">
+        <BUtton id="btnSalvarProduto" type="button">Salvar</BUtton>
+    </form>
+    <table border="1">
+        <thead>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+            <th>Excluir</th>
+        </thead>
+        <tbody id="tabelaProduto"></tbody>
+    </table>
+
+
+
+    <script src="main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
